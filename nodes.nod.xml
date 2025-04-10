@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/nodes_file.xsd">
+    <!-- Central Intersection Node -->
+    <node id="0" x="0.0" y="0.0" type="traffic_light"/> <!-- Change to "traffic_light" if needed -->
+
+    <!-- South Side -->
+    <node id="south" x="0.0" y="-1000.0" type="priority"/> <!-- South Incoming/Outgoing -->
+
+    <!-- North Side -->
+    <node id="north" x="0.0" y="1000.0" type="priority"/> <!-- North Incoming/Outgoing -->
+
+    <!-- West Side -->
+    <node id="west" x="-1000.0" y="0.0" type="priority"/> <!-- West Incoming/Outgoing -->
+
+    <!-- East Side -->
+    <node id="east" x="1000.0" y="0.0" type="priority"/> <!-- East Incoming/Outgoing -->
+</nodes>

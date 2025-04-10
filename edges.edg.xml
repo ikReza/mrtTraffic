@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+    <!-- South Side (4 lanes each) -->
+    <edge id="south_to_0" from="south" to="0" numLanes="4" speed="13.89"/> <!-- South→Intersection -->
+    <edge id="0_to_south" from="0" to="south" numLanes="4" speed="13.89"/> <!-- Intersection→South -->
+
+    <!-- North Side (4 lanes each) -->
+    <edge id="north_to_0" from="north" to="0" numLanes="4" speed="13.89"/> <!-- North→Intersection -->
+    <edge id="0_to_north" from="0" to="north" numLanes="4" speed="13.89"/> <!-- Intersection→North -->
+
+    <!-- West Side (3 lanes each) -->
+    <edge id="west_to_0" from="west" to="0" numLanes="2" speed="13.89"/> <!-- West→Intersection -->
+    <edge id="0_to_west" from="0" to="west" numLanes="2" speed="13.89"/> <!-- Intersection→West -->
+
+    <!-- East Side (3 lanes each) -->
+    <edge id="east_to_0" from="east" to="0" numLanes="2" speed="13.89"/> <!-- East→Intersection -->
+    <edge id="0_to_east" from="0" to="east" numLanes="2" speed="13.89"/> <!-- Intersection→East -->
+</edges>
