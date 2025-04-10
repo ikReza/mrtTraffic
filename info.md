@@ -25,3 +25,5 @@ Use the following netconvert command to generate the SUMO network file:
 netconvert --node-files=nodes.nod.xml --edge-files=edges.edg.xml --connection-files=connections.con.xml --output-file=network.net.xml --lefthand
 ```
 
+4. **`routes.rou.xml`:** This file defines vehicle types, routes, and traffic flow within the simulation.
+5. **`simulation.sumocfg`:** This is the main configuration file that tells SUMO how to run the simulation - it's basically the control center that connects all files (network, routes, output, and settings).
