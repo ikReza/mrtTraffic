@@ -39,6 +39,7 @@
     <connection from="east_to_0" to="0_to_south" fromLane="1" toLane="1"/>
 
     <!-- U-Turn from East (Rightmost lane only) -->
+    <connection from="east_to_0" to="0_to_east" fromLane="0" toLane="0"/>
     <connection from="east_to_0" to="0_to_east" fromLane="1" toLane="1"/>
 
 </connections>

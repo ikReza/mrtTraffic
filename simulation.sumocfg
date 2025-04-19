@@ -3,6 +3,7 @@
     <input>
         <net-file value="network.net.xml"/> <!-- Path to the network file -->
         <route-files value="routes.rou.xml"/> <!-- Path to the routes file -->
+        <additional-files value="busBay.add.xml"/>
     </input>
     <time>
         <begin value="0"/> <!-- Simulation start time -->
@@ -10,5 +11,6 @@
     </time>
     <output>
         <tripinfo-output value="tripinfo.xml"/> <!-- Output file for trip statistics -->
+        <summary-output value="summary.xml"/> <!--Total inserted vehicles, running vehicles, waiting vehicles, etc. -->
     </output>
 </configuration>
