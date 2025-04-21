@@ -14,4 +14,7 @@
 
     <!-- East Side -->
     <node id="east" x="1000.0" y="0.0" type="priority"/> <!-- East Incoming/Outgoing -->
+
+    <!-- U-turn Intersection before main intersection -->
+    <node id="east_u_turn" x="100.0" y="0.0" type="priority"/>  <!-- This node is placed before 'east' -->
 </nodes>

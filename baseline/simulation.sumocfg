@@ -5,6 +5,7 @@
         <route-files value="routes.rou.xml"/> <!-- Path to the routes file -->
         <additional-files value="busBay.add.xml"/>
     </input>
+
     <time>
         <begin value="0"/> <!-- Simulation start time -->
         <end value="3600"/> <!-- Simulation end time (1 hour) -->

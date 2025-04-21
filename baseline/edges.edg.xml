@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+    <!-- South Side (4 lanes each) -->
+    <edge id="south_to_0" from="south" to="0" numLanes="4" speed="13.89" priority="3"> <!-- South→Intersection -->
+        <lane index="0" allow="bus"/>
+        <lane index="1" disallow="bus"/>
+        <lane index="2" disallow="bus"/>
+        <lane index="3" allow="truck bus hov taxi motorcycle passenger"/>
+    </edge>
+    <edge id="0_to_south" from="0" to="south" numLanes="4" speed="13.89"/> <!-- Intersection→South -->
+
+    <!-- North Side (4 lanes each) -->
+    <edge id="north_to_0" from="north" to="0" numLanes="4" speed="13.89" priority="3"> <!-- North→Intersection -->
+        <lane index="0" allow="bus"/>
+        <lane index="1" disallow="bus"/>
+        <lane index="2" disallow="bus"/>
+        <lane index="3" allow="truck bus hov taxi motorcycle passenger"/>
+    </edge>
+    <edge id="0_to_north" from="0" to="north" numLanes="4" speed="13.89"/> <!-- Intersection→North -->
+
+    <!-- West Side (3 lanes each) -->
+    <edge id="west_to_0" from="west" to="0" numLanes="2" speed="13.89" priority="1"/> <!-- West→Intersection -->
+    <edge id="0_to_west" from="0" to="west" numLanes="2" speed="13.89"/> <!-- Intersection→West -->
+
+    <!--
+    <edge id="east_to_0" from="east" to="0" numLanes="2" speed="13.89"> 
+        <lane index="1" disallow="bus"/>
+    </edge>
+    <edge id="0_to_east" from="0" to="east" numLanes="2" speed="13.89"/>
+    -->
+
+    <!-- U-turn edge before the main intersection -->
+    <edge id="east_to_u_turn" from="east" to="east_u_turn" numLanes="2" speed="13.89"/> <!-- East to U-turn intersection -->
+    <edge id="u_turn_to_east" from="east_u_turn" to="east" numLanes="2" speed="13.89" priority="1"/> <!-- U-turn back to East -->
+    <edge id="u_turn_to_0" from="east_u_turn" to="0" numLanes="2" speed="13.89"/>
+    <edge id="0_to_u_turn" from="0" to="east_u_turn" numLanes="2" speed="13.89"/>
+</edges>

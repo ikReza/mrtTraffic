@@ -21,7 +21,7 @@ This documentation outlines the manually created files required to build a SUMO 
 
 Use the following netconvert command to generate the SUMO network file:
 
-```
+```xml
 netconvert --node-files=nodes.nod.xml --edge-files=edges.edg.xml --connection-files=connections.con.xml --output-file=network.net.xml --lefthand
 ```
 

@@ -9,10 +9,13 @@
     <connection from="north_to_0" to="0_to_south" fromLane="3" toLane="3"/>
     
     <!-- North to East (Left Turn, all lanes allowed) -->
-    <connection from="north_to_0" to="0_to_east" fromLane="0" toLane="0"/>
-    <connection from="north_to_0" to="0_to_east" fromLane="0" toLane="1"/>
-    <connection from="north_to_0" to="0_to_east" fromLane="1" toLane="0"/>
-    <connection from="north_to_0" to="0_to_east" fromLane="1" toLane="1"/>
+    <connection from="north_to_0" to="0_to_u_turn" fromLane="0" toLane="0"/>
+    <connection from="north_to_0" to="0_to_u_turn" fromLane="1" toLane="1"/>
+
+    <!--
+    <connection from="0_to_u_turn" to="u_turn_to_east" fromLane="0" toLane="0"/>
+    <connection from="0_to_u_turn" to="u_turn_to_east" fromLane="1" toLane="1"/>
+    -->
 
     <!-- South to North (Straight) -->
     <connection from="south_to_0" to="0_to_north" fromLane="0" toLane="0"/>
@@ -22,24 +25,21 @@
     
     <!-- South to West (Left Turn, all lanes allowed) -->
     <connection from="south_to_0" to="0_to_west" fromLane="0" toLane="0"/>
-    <connection from="south_to_0" to="0_to_west" fromLane="0" toLane="1"/>
-    <connection from="south_to_0" to="0_to_west" fromLane="1" toLane="0"/>
     <connection from="south_to_0" to="0_to_west" fromLane="1" toLane="1"/>
 
     <!-- West to North (Left Turn, all lanes allowed) -->
     <connection from="west_to_0" to="0_to_north" fromLane="0" toLane="0"/>
-    <connection from="west_to_0" to="0_to_north" fromLane="0" toLane="1"/>
-    <connection from="west_to_0" to="0_to_north" fromLane="1" toLane="0"/>
     <connection from="west_to_0" to="0_to_north" fromLane="1" toLane="1"/>
 
+    <!-- East_U_Turn to 0 -->
+    <connection from="east_to_u_turn" to="u_turn_to_0" fromLane="0" toLane="0"/>
+    <connection from="east_to_u_turn" to="u_turn_to_0" fromLane="1" toLane="1"/>
+
     <!-- East to South (Left Turn, all lanes allowed) -->
-    <connection from="east_to_0" to="0_to_south" fromLane="0" toLane="0"/>
-    <connection from="east_to_0" to="0_to_south" fromLane="0" toLane="1"/>
-    <connection from="east_to_0" to="0_to_south" fromLane="1" toLane="0"/>
-    <connection from="east_to_0" to="0_to_south" fromLane="1" toLane="1"/>
+    <connection from="u_turn_to_0" to="0_to_south" fromLane="0" toLane="0"/>
+    <connection from="u_turn_to_0" to="0_to_south" fromLane="1" toLane="1"/>
 
     <!-- U-Turn from East (Rightmost lane only) -->
-    <connection from="east_to_0" to="0_to_east" fromLane="0" toLane="0"/>
-    <connection from="east_to_0" to="0_to_east" fromLane="1" toLane="1"/>
+    <connection from="east_to_u_turn" to="u_turn_to_east" fromLane="1" toLane="1"/>
 
 </connections>

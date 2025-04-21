@@ -13,6 +13,8 @@ for trip in root.findall("tripinfo"):
         "Depart": float(trip.get("depart", 0)),
         "Arrival": float(trip.get("arrival", 0)),
         "Duration": float(trip.get("duration", 0)),
+        "Waiting Time": float(trip.get("waitingTime", 0)),
+        "Departure Delay": float(trip.get("departDelay", 0)),
         "Vehicle": trip.get("vType", 0)
     }
     trip_data.append(trip_info)
