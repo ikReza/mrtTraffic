@@ -1,0 +1,55 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- Include vehicle types -->
+    <vTypeDistribution id="progatiSarani">
+        <vType id="bicycleDist1" vClass="bicycle" length="1.8" width="0.7" maxSpeed="5.56" accel="0.8" decel="2.5" sigma="0.7" color="0,255,0" lcStrategic="1.5" lcCooperative="0.7" lcSpeedGain="0.6" minGap="0.2" probability="0.02"/>
+        <vType id="motorcycleDist1" vClass="motorcycle" length="2.0" width="1.0" maxSpeed="16.67" accel="2.5" decel="6.0" sigma="0.3" color="255,0,0" lcStrategic="2.0" lcCooperative="0.8" lcSpeedGain="0.4" minGap="0.4" probability="0.39"/>
+        <vType id="cngDist1" vClass="taxi" length="3.0" width="1.5" maxSpeed="13.89" accel="1.5" decel="4.0" sigma="0.4" color="0,0,255" lcStrategic="1.8" lcCooperative="0.9" lcSpeedGain="0.5" minGap="0.8" probability="0.16"/>
+        <vType id="busDist1" vClass="bus" length="12.0" width="2.5" maxSpeed="16.67" accel="1.0" decel="3.0" sigma="0.3" color="128,0,128" lcStrategic="1.2" lcCooperative="0.9" lcSpeedGain="0.7" minGap="2.0" probability="0.11"/>
+        <vType id="carDist1" vClass="passenger" length="5.0" width="1.8" maxSpeed="22.22" accel="2.6" decel="4.5" sigma="0.2" color="255,255,0" lcStrategic="1.5" lcCooperative="0.9" lcSpeedGain="0.6" minGap="1.5" probability="0.22"/>
+        <vType id="microbusDist1" vClass="hov" length="6.0" width="2.0" maxSpeed="18.06" accel="2.0" decel="4.0" sigma="0.2" color="0,255,255" lcStrategic="1.4" lcCooperative="0.9" lcSpeedGain="0.6" minGap="1.6" probability="0.09"/>
+        <vType id="truckDist1" vClass="truck" length="15.0" width="2.5" maxSpeed="13.89" accel="0.8" decel="2.5" sigma="0.3" color="128,128,128" lcStrategic="1.1" lcCooperative="0.9" lcSpeedGain="0.8" minGap="2.5" probability="0.01"/>
+    </vTypeDistribution>
+
+    <vTypeDistribution id="madaniAvenue">
+        <vType id="bicycleDist2" vClass="bicycle" length="1.8" width="0.7" maxSpeed="5.56" accel="0.8" decel="2.5" sigma="0.7" color="0,255,0" lcStrategic="1.5" lcCooperative="0.7" lcSpeedGain="0.6" minGap="0.2" probability="0.08"/>
+        <vType id="motorcycleDist2" vClass="motorcycle" length="2.0" width="1.0" maxSpeed="16.67" accel="2.5" decel="6.0" sigma="0.3" color="255,0,0" lcStrategic="2.0" lcCooperative="0.8" lcSpeedGain="0.4" minGap="0.4" probability="0.34"/>
+        <vType id="cngDist2" vClass="taxi" length="3.0" width="1.5" maxSpeed="13.89" accel="1.5" decel="4.0" sigma="0.4" color="0,0,255" lcStrategic="1.8" lcCooperative="0.9" lcSpeedGain="0.5" minGap="0.8" probability="0.26"/>
+        <vType id="carDist2" vClass="passenger" length="5.0" width="1.8" maxSpeed="22.22" accel="2.6" decel="4.5" sigma="0.2" color="255,255,0" lcStrategic="1.5" lcCooperative="0.9" lcSpeedGain="0.6" minGap="1.5" probability="0.25"/>
+        <vType id="microbusDist2" vClass="hov" length="6.0" width="2.0" maxSpeed="18.06" accel="2.0" decel="4.0" sigma="0.2" color="0,255,255" lcStrategic="1.4" lcCooperative="0.9" lcSpeedGain="0.6" minGap="1.6" probability="0.05"/>
+        <vType id="truckDist2" vClass="truck" length="15.0" width="2.5" maxSpeed="13.89" accel="0.8" decel="2.5" sigma="0.3" color="128,128,128" lcStrategic="1.1" lcCooperative="0.9" lcSpeedGain="0.8" minGap="2.5" probability="0.02"/>
+    </vTypeDistribution>
+
+    <vTypeDistribution id="madaniAvenueRickshaw">
+        <vType id="rickshawDist2" vClass="moped" length="2.5" width="1.3" maxSpeed="11.11" accel="1.0" decel="3.0" sigma="0.7" color="255,165,0" lcStrategic="2.0" lcCooperative="0.8" lcSpeedGain="0.5" minGap="0.5" probability="1.0"/>
+    </vTypeDistribution>
+
+    <vTypeDistribution id="gulshan">
+        <vType id="rickshawDist3" vClass="moped" length="2.5" width="1.3" maxSpeed="11.11" accel="1.0" decel="3.0" sigma="0.7" color="255,165,0" lcStrategic="2.0" lcCooperative="0.8" lcSpeedGain="0.5" minGap="0.5" probability="0.28"/>
+        <vType id="bicycleDist3" vClass="bicycle" length="1.8" width="0.7" maxSpeed="5.56" accel="0.8" decel="2.5" sigma="0.7" color="0,255,0" lcStrategic="1.5" lcCooperative="0.7" lcSpeedGain="0.6" minGap="0.2" probability="0.03"/>
+        <vType id="motorcycleDist3" vClass="motorcycle" length="2.0" width="1.0" maxSpeed="16.67" accel="2.5" decel="6.0" sigma="0.3" color="255,0,0" lcStrategic="2.0" lcCooperative="0.8" lcSpeedGain="0.4" minGap="0.4" probability="0.27"/>
+        <vType id="cngDist3" vClass="taxi" length="3.0" width="1.5" maxSpeed="13.89" accel="1.5" decel="4.0" sigma="0.4" color="0,0,255" lcStrategic="1.8" lcCooperative="0.9" lcSpeedGain="0.5" minGap="0.8" probability="0.14"/>
+        <vType id="busDist3" vClass="bus" length="12.0" width="2.5" maxSpeed="16.67" accel="1.0" decel="3.0" sigma="0.3" color="128,0,128" lcStrategic="1.2" lcCooperative="0.9" lcSpeedGain="0.7" minGap="2.0" probability="0.04"/>
+        <vType id="carDist3" vClass="passenger" length="5.0" width="1.8" maxSpeed="22.22" accel="2.6" decel="4.5" sigma="0.2" color="255,255,0" lcStrategic="1.5" lcCooperative="0.9" lcSpeedGain="0.6" minGap="1.5" probability="0.17"/>
+        <vType id="microbusDist3" vClass="hov" length="6.0" width="2.0" maxSpeed="18.06" accel="2.0" decel="4.0" sigma="0.2" color="0,255,255" lcStrategic="1.4" lcCooperative="0.9" lcSpeedGain="0.6" minGap="1.6" probability="0.06"/>
+        <vType id="truckDist3" vClass="truck" length="15.0" width="2.5" maxSpeed="13.89" accel="0.8" decel="2.5" sigma="0.3" color="128,128,128" lcStrategic="1.1" lcCooperative="0.9" lcSpeedGain="0.8" minGap="2.5" probability="0.01"/>
+    </vTypeDistribution>
+
+    <!-- Define routes for all movements -->
+    <route id="route_south_to_north" edges="south_to_0 0_to_north"/> <!-- South→North -->
+    <route id="route_south_to_west" edges="south_to_0 0_to_west"/> <!-- South→West -->
+    <route id="route_west_to_north" edges="west_to_0 0_to_north"/> <!-- West→North -->
+    <route id="route_north_to_south" edges="north_to_0 0_to_south"/> <!-- North→South -->
+    <route id="route_north_to_east" edges="north_to_0 0_to_u_turn u_turn_to_east"/> <!-- North→East -->
+    <route id="route_east_to_south" edges="east_to_u_turn u_turn_to_0 0_to_south"/> <!-- East→South -->
+    <route id="route_east_to_east" edges="east_to_u_turn u_turn_to_east"/> <!-- East→U-turn→East -->
+
+    <!-- Flows (adjust vehsPerHour as needed) -->
+    <flow id="flow_south_to_north" type="progatiSarani" route="route_south_to_north" begin="0" end="3600" vehsPerHour="1800" departLane="best" departSpeed="max"/>
+    <flow id="flow_south_to_west" type="gulshan" route="route_south_to_west" begin="0" end="3600" vehsPerHour="650" departLane="best" departSpeed="max"/>
+    <flow id="flow_west_to_north" type="gulshan" route="route_west_to_north" begin="0" end="3600" vehsPerHour="650" departLane="best" departSpeed="max"/>
+    <flow id="flow_north_to_south" type="progatiSarani" route="route_north_to_south" begin="0" end="3600" vehsPerHour="1950" departLane="best" departSpeed="max"/>
+    <flow id="flow_north_to_east" type="madaniAvenue" route="route_north_to_east" begin="0" end="3600" vehsPerHour="1200" departLane="best" departSpeed="max"/>
+    <flow id="flow_east_to_south" type="madaniAvenue" route="route_east_to_south" begin="0" end="3600" vehsPerHour="600" departLane="best" departSpeed="max"/>
+    <flow id="flow_east_to_east" type="madaniAvenue" route="route_east_to_east" begin="0" end="3600" vehsPerHour="250" departLane="best" departSpeed="max"/>
+    <flow id="flow_east_to_east_rickshaw" type="madaniAvenue" route="route_east_to_east" begin="0" end="3600" vehsPerHour="450" departLane="best" departSpeed="max"/>
+</routes>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+    <input>
+        <net-file value="network.net.xml"/> <!-- Path to the network file -->
+        <route-files value="routes.rou.xml"/> <!-- Path to the routes file -->
+        <additional-files value="busBay.add.xml"/>
+    </input>
+
+    <time>
+        <begin value="0"/> <!-- Simulation start time -->
+        <end value="3600"/> <!-- Simulation end time (1 hour) -->
+    </time>
+    <output>
+        <tripinfo-output value="tripinfo.xml"/> <!-- Output file for trip statistics -->
+        <summary-output value="summary.xml"/> <!--Total inserted vehicles, running vehicles, waiting vehicles, etc. -->
+    </output>
+</configuration>
